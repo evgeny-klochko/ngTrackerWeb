@@ -1,0 +1,18 @@
+<div class="page-container content-wrap">
+  <h1 class="page-title">Password reset</h1>
+  <div data-ng-if="reset.state.success">
+    <p>Your password has been reset successfully. Check your email for new password.</p>
+    <p>Do not forget to change password as soon as you are logged in for security reasons.</p>
+  </div>
+
+  <div data-ng-if="reset.state.error">
+    <p data-ng-bind="reset.state.error"></p>
+    <a ui-sref="blank.forgot-password">Retry</a>
+  </div>
+
+  <form class="simple-form">
+    <div class="form-group">
+      <button class="button button_orange button_light submit" ui-sref="blank.login">Log in</button>
+    </div>
+  </form>
+</div>

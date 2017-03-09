@@ -1,0 +1,94 @@
+.full-w-header
+  position: absolute
+  width: 100%
+  z-index: 1
+  top: 0
+  left: 0
+  padding: 20px 10px 0
+  .header-container
+    max-width: 1164px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    object
+      height: 70px
+
+.main-header
+  position: fixed
+  height: 60px
+  line-height: 60px
+  transition: all 0.3s ease
+  z-index: 5
+  width: 100%
+  padding-left: 180px
+  background-color: $main-header-bg
+  .header-container
+    display: flex
+    justify-content: flex-end
+    max-width: 930px
+    padding: 0 15px
+    margin: auto
+
+.header__drop
+  display: inline-block
+  align-items: stretch
+  position: relative
+  & > ul
+    display: none
+    position: absolute
+    top: 60px
+    left: auto
+    right: 0
+    border-radius: 2px
+    background-color: rgba(246, 246, 246, 0.969)
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1)
+    width: 230px
+    padding-bottom: 8px
+    padding-top: 0
+    margin-top: 0
+    font-size: 100%
+    a
+      display: block
+      text-decoration: none
+      line-height: 130%
+      font-size: 0.875em
+    .menu-icon
+      div
+        margin-right: 9px
+        background-position: 0 50%
+      a
+        color: $header-drop-color
+        padding: 6px 0 6px 32px
+        span
+          top: 0
+    .superadmin:hover,
+    .superadmin
+      background: #507bbe
+      color: #fff
+      padding: 15px 0 15px 58px
+
+  &-btn
+    width: 68px
+    height: 60px
+    background: url("images/menu-icons/admin-icon.svg") 40% 50% no-repeat
+    &:after
+      content: ''
+      position: absolute
+      top: 28px
+      right: 12px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 6px 4px 0 4px
+      border-color: #595e6f transparent transparent transparent
+  &.open,
+  &:hover
+    .header__drop-btn
+        background-color: #aaa9a9
+
+.dropdown-menu
+  & > li
+    a
+      white-space: normal
+

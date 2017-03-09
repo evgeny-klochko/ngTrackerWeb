@@ -1,0 +1,52 @@
+.button
+  text-decoration: none
+  font-size: 1.250em
+  color: #fff
+  padding: 12px 30px 18px
+  border-radius: 2px
+  transition: 0.5s
+  cursor: pointer
+  & + .button
+    margin-left: 2em
+  &:disabled
+    cursor: not-allowed
+  &:focus,
+  &:active,
+  &:visited,
+  &:hover
+    transition: 0.5s
+    color: #fff
+    outline: none
+  &_blue
+    background: $btn-blue
+    &:hover
+      background: $btn-blue__hover
+  &_orange
+    background: $btn_orange
+    &:hover
+      background: $btn_orange__hover
+  &_light
+    margin: auto
+    font-weight: 300
+    padding: 12px 40px 18px
+  &_copy
+    position: relative
+    padding: 0 15px
+    height: 36px
+    margin-left: 40px
+  &_add
+    padding-left: 20px
+    &:before
+      content: "+"
+      display: inline-block
+      font-size: 1.8em
+      font-weight: bold
+      margin-right: 5px
+      line-height: 12px
+      position: relative
+      top: 5px
+
+span.button
+  display: inline-block
+  font-size: 1em
+  padding: 8px 20px 12px

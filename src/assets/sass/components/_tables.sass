@@ -1,0 +1,217 @@
+.table-block
+  min-width: 700px
+  clear: both
+  table
+    width: 100%
+    box-sizing: border-box
+    border-collapse: collapse
+    border-spacing: 0
+    tr
+      th,
+      td
+        border: 3px solid #fff
+        vertical-align: middle
+        font-size: 0.875em
+        padding: 0 .6em
+        text-align: left
+        &:first-child
+          padding-left: 1.5em
+          border-left: none
+        &:last-child
+          border-right: none
+      td
+        background: $table-td-1
+        height: 40px
+        &.state
+          width: 60px
+        &.change-block
+          padding-left: 0
+        .col-link
+          cursor: pointer
+          text-decoration: underline
+          color: $btn-blue
+          &:hover
+            color: $btn-blue__hover
+        .col-email
+          cursor: pointer
+          a
+            text-decoration: underline
+      th
+        background-color: $tables-th-bg
+        height: 50px
+        color: $tables-th-color
+        cursor: pointer
+        padding-left: .6em
+        background-position: center right
+        background-repeat: no-repeat
+        text-shadow: none
+        .sort-indicator
+          display: block
+        &.sorting
+          background-image: url("images/sort_both.png")
+        &.sorting-asc
+          background-image: url("images/sort_asc.png")
+        &.sorting-desc
+          background-image: url("images/sort_desc.png")
+        &.sortable
+          &.sort-desc,
+          &.sort-asc
+            background-color: $tables-th-bg-hover
+            text-shadow: none
+      &:nth-child(2n)
+        td
+          background: $table-td-2
+      .change-row
+        display: flex
+        justify-content: center
+        align-content: center
+        li
+          height: 30px
+          a,
+          button
+            display: inline-block
+            margin: 0 8px
+            width: 30px
+            text-indent: 200%
+            white-space: nowrap
+            overflow: hidden
+            height: 30px
+            tex
+            &.edit-row
+              background: url("images/menu-icons/edit_icon.svg") center no-repeat
+            &.remove-row
+              background: url("images/menu-icons/delete_icon.svg") center no-repeat
+
+.ng-table
+  td.td-phone
+    min-width: 120px
+  th.sortable
+    .sort-indicator
+      &:before
+        border-top: 6px solid #595e6f
+        border-left: 4px solid transparent
+        border-right: 4px solid transparent
+      &:after
+        border-width: 0 4px 6px
+        margin-top: -6px
+        border-bottom: 6px solid #595e6f
+    &.sort-desc
+      .sort-indicator
+        &:after
+          border-top: 6px solid #595e6f
+    &.sort-asc
+      .sort-indicator
+        &:before
+          border-bottom: 6px solid #595e6f
+
+.filter-menu
+  width: 165px
+  li
+    padding: 2px 10px
+    label
+      cursor: pointer
+      width: 100%
+      input
+        width: initial
+        display: inline-block
+        vertical-align: middle
+        margin: 0
+      span
+        vertical-align: middle
+
+.search-filters
+  clear: both
+  max-width: 50%
+
+.search-filters__remove
+  cursor: pointer
+  display: inline-block
+  padding: 8px
+  font-weight: bold
+  color: $btn_orange
+
+.table-bordered
+  border: none
+
+.table-top-btns
+  float: right
+  margin-bottom: 1.4em
+  button
+    font-size: 1em
+    padding: 8px 30px 11px
+  .button_add
+    padding: 8px 10px 11px
+    &:before
+      content: ""
+    &:after
+      content: "+"
+      display: inline-block
+      font-size: 1.5em
+      font-weight: 500
+      margin-left: 5px
+      line-height: 12px
+      position: relative
+      top: 3px
+
+  .button + .button
+    margin-left: 5px
+
+.sorting-table-wrap
+  clear: both
+  margin-bottom: 50px
+
+//pagination
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus
+  background-color: #eaeaea
+  color: #58595b
+  font-size: 1em
+
+.ng-table-pager
+  text-align: center
+  li
+    display: inline-block
+    a
+      background-color: #eaeaea
+      line-height: 130%
+      font-size: 1em
+      padding: 3px 7px
+      border-radius: 2px
+      margin-left: 1px
+      color: #58595b
+      height: 28px
+      min-width: 25px
+      text-align: center
+      border: 1px solid #e3e3e3
+  .next:hover,
+  .prev:hover,
+  .disabled a,
+  .disabled:hover a,
+  .prev,
+  .next
+    position: relative
+    background-color: #d0d0d0
+  .prev,
+  .next
+    &:after
+      position: absolute
+      content: ''
+      width: 0
+      height: 0
+      border-style: solid
+      margin-left: -3px
+      margin-top: -4px
+      top: 50%
+      left: 50%
+  .next
+    &:after
+      border-width: 4px 0 4px 6px
+      border-color: transparent transparent transparent #595e6f
+  .prev
+    &:after
+      border-width: 4px 6px 4px 0
+      border-color: transparent #595e6f transparent transparent
+  .pull-right
+    select
+      height: 35px
+      width: 73px
+      margin-top: -5px

@@ -1,0 +1,49 @@
+.page-login
+  background-image: url('images/login.jpg')
+  background-size: cover
+  background-position: 50%
+  position: absolute
+  width: 100%
+  min-height: 100vh
+  color: $login-text-color
+
+  .login-container
+    padding-top: 30px
+    margin: auto
+    max-width: 480px
+    display: flex
+    align-content: center
+    justify-content: center
+    height: 100vh
+    min-height: 100vh
+    flex-flow: column wrap
+    .page-title
+      color: $login-title
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+  .forgot-block
+    padding-right: .8em
+    text-align: right
+    a
+      color: $forgot-a
+      font-size: 0.938em
+  .register-block
+    text-align: center
+    font-size: 1.063em
+    font-weight: 300
+    margin-top: 50px
+    margin-bottom: 50px
+    p
+      margin-bottom: 10px
+    a
+      font-weight: 700
+      color: $login-register-a
+
+@media screen and (max-height: 700px)
+  .page-login
+    .login-container
+      padding-top: 120px
+      display: block
+      height: 100%

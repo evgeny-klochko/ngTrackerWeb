@@ -1,0 +1,222 @@
+.calendar
+  min-width: $min-calendar-width
+  .fc-toolbar
+    margin-bottom: 0.6em
+    .fc-left
+      width: 37%
+      h2
+        font-size: 2.250em
+        line-height: 100%
+        color: #3d2247
+        font-weight: 300
+        margin-bottom: 2px
+    .fc-right
+      button
+        box-shadow: none
+        text-shadow: none
+        text-transform: capitalize
+        padding: 0 1em
+        height: 2.5em
+        border: none
+      .fc-button-group
+        button
+          background: $toolbar-right-btn-bg
+          color: $toolbar-right-btn
+          border-left: 2px solid #bfbfbf
+          &:first-child
+            border: none
+          &:hover,
+          &.fc-state-active
+            background: $toolbar-right-btn-bg-active
+            color: $toolbar-right-btn-hover
+          &.fc-state-active
+            font-weight: 700
+            z-index: 0
+          &.fc-state-default
+            &.fc-corner-left
+              border-top-left-radius: 2px
+              border-bottom-left-radius: 2px
+            &.fc-corner-right
+              border-top-right-radius: 2px
+              border-bottom-right-radius: 2px
+        & + .fc-state-default
+          background: $toolbar-right-add
+          color: $toolbar-right-btn-hover
+          border-radius: 2px
+          margin-left: .3em
+          padding: 0 0.7em
+          display: flex
+          &:after
+            content: '+'
+            font-size: 1.4em
+            display: inline-block
+            margin-left: 5px
+          &:hover
+            background: $toolbar-right-add-hover
+    .fc-center
+      margin-top: .4em
+      button
+        height: 1.7em
+      .fc-today-button
+        text-transform: capitalize
+        color: $toolbar-center-today
+        padding: 0 1em
+        border: 1px solid #e3e3e3
+        margin: 0 1px
+        background: #eaeaea
+        border-radius: 2px
+      .fc-corner-left,
+      .fc-corner-right
+        box-shadow: none
+        background: #d0d0d0
+        border: 1px solid #c3c3c3
+        .fc-icon
+          display: none
+      .fc-corner-right
+        border-top-right-radius: 2px
+        border-bottom-right-radius: 2px
+        display: flex
+        &:before
+          content: ''
+          display: inline-block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 4px 0 4px 6px
+          border-color: transparent transparent transparent #595e6f
+      .fc-corner-left
+        display: flex
+        border-top-left-radius: 2px
+        border-bottom-left-radius: 2px
+        &:before
+          content: ''
+          display: inline-block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 4px 6px 4px 0
+          border-color: transparent #595e6f transparent transparent
+  & + .fc-head-container
+    border: none
+  .fc-view-container
+    background: $fc-gray
+    padding: 5px
+    .fc-head,
+    .fc-widget-content,
+    .fc-widget-header,
+    .fc-body
+      border: none
+    .fc-head
+      .fc-row
+        margin-right: 0 !important
+    .fc-body
+      .fc-day-grid
+        &.fc-unselectable
+          background: #fff
+      .fc-scroller
+        overflow-x: visible !important
+        overflow-y: visible !important
+        height: auto !important
+        .fc-row
+          min-height: 5em
+      .fc-slats
+        .fc-widget-content
+          border-width: 1px
+          border-color: #e6e6e6
+        .fc-minor
+          .fc-widget-content
+            border-bottom: 2px solid #d5d5d5
+        .fc-axis
+          &.fc-widget-content
+            border: none
+      .fc-content-skeleton
+        .fc-v-event
+          opacity: 0.8
+          border-radius: 0
+      .fc-today
+        background: none
+    .fc-bg
+      background: #fff
+      td
+        border: 3px solid $fc-gray
+    .fc-widget-header
+      th
+        background: $fc-widget-header
+        color: #fff
+        vertical-align: middle
+        height: 34px
+        border: 3px solid $fc-gray
+        &.fc-today
+          background: #3e649d
+    .fc-widget-content,
+    .fc-widget-header
+      .fc-axis
+        background: $fc-gray
+    .fc-agendaWeek-view .fc-scroller,
+    .fc-time-grid-container
+      .fc-bg
+        background: $fc-gray
+    .fc-month-view
+      .fc-today
+        background: $fc-gray
+        .fc-day-number
+          color: #fc7753
+      .fc-event
+        background: none
+        border: none
+        color: #1c7796
+        .fc-time
+          font-weight: 400
+    .fc-agendaWeek-view
+      .fc-scroller
+        .fc-bg
+          td
+            border: 3px solid #eaeaea
+    .fc-agendaWeek-view, .fc-agendaDay-view
+      .fc-content
+        .fc-title
+          margin-left: 3px
+
+  .fc-event
+    cursor: pointer
+    .fc-content
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+  .fc-v-event
+    margin-right: 1px
+    margin-bottom: 1px
+    .fc-content
+      .fc-title
+        display: block;
+        overflow: hidden;
+        word-break: break-all;
+        text-overflow: ellipsis;
+  .fc-more
+    width: 100%
+    height: 20px
+    left: -3px
+    position: relative
+    color: transparent
+    background: #8dcfe0
+    &:after
+      content: '...'
+      color: #4B77BC
+      display: block
+      font-size: 2em
+      position: absolute
+      top: -7px
+      right: 6px
+
+
+@media screen and (max-width: 1080px)
+  .fc-toolbar
+    & > .fc-left
+      width: 100%
+      text-align: center
+      margin-bottom: 2em
+      h2
+        float: none
+    & > .fc-center
+      float: left

@@ -1,0 +1,10 @@
+<div class="modal-header">
+  <h3 class="modal-title" id="modal-title" ng-bind="::$ctrl.resolve.params.title"></h3>
+</div>
+<div class="modal-body" ng-if="::$ctrl.resolve.params.content" ng-bind="::$ctrl.resolve.params.content">
+
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()" ng-bind="::$ctrl.resolve.params.okButtonText"></button>
+  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()" ng-bind="::$ctrl.resolve.params.cancelButtonText"></button>
+</div>

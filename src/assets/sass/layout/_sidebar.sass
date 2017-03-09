@@ -1,0 +1,118 @@
+.sidebar
+  background: $sidebar
+  bottom: 0
+  display: flex
+  position: fixed
+  top: 0
+  z-index: 6
+  width: 180px
+  &-content
+    width: 100%
+    flex: 1 0 auto
+    overflow-x: hidden
+    overflow-y: auto
+    nav
+      background-color: $sidebar
+      min-height: 100%
+      display: flex
+      flex-direction: column
+      height: 100%
+      height: 100%
+  &__nav
+    flex: 100 0 auto
+    .menu-icon
+      a
+        text-decoration: none
+        text-transform: uppercase
+        &.active,
+        &:hover
+          color: $sidebar-text__hover
+          background-color: $sidebar-bg
+        & + ul
+          a
+            text-transform: none
+            font-style: italic
+            &.active,
+            &:hover
+              background: none
+  &__logo
+    padding-top: 65px
+    padding-bottom: 30px
+    text-align: center
+  &__footer
+    flex: 1 0 auto
+    background: $sidebar-footer-bg
+    padding: 9% 15%
+    font-size: 0.875em
+    color: $sidebar-footer
+    width: 100%
+    flex-flow: column wrap
+    align-self: flex-end
+
+.menu-icon
+  &.active
+    ul
+      display: block
+  a
+    cursor: pointer
+    display: block
+    padding: 10px 0 10px 30px
+    color: $sidebar-text
+    font-size: 0.750em
+    span
+      position: relative
+      top: 4px
+    div
+      display: inline-block
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      vertical-align: middle
+      background-position: center
+      margin-right: 5px
+      &.subscriptions
+        background-image: url("images/menu-icons/subscriptions_icon-gray.svg")
+      &.accounts
+        background-image: url("images/menu-icons/accounts-icon-gray.svg")
+      &.users
+        background-image: url("images/menu-icons/users-icon-gray.svg")
+      &.profile
+        background-image: url("images/menu-icons/admin-icon.svg")
+      &.profile-logo
+        background-image: url("images/menu-icons/profile-logo.svg")
+      &.sign-out
+        background-image: url("images/menu-icons/logout_icon.svg")
+      &.events
+        background-image: url("images/menu-icons/events_icon-gray.svg")
+      &.categories
+        background-image: url("images/menu-icons/categories_icon-gray.svg")
+      &.export
+        background-image: url("images/menu-icons/export_icon-gray.svg")
+      &.billing
+        background-image: url("images/menu-icons/billing_icon-gray.svg")
+    &.active,
+    &:hover
+      div
+        &.subscriptions
+          background-image: url("images/menu-icons/subscriptions_icon-white.svg")
+        &.accounts
+          background-image: url("images/menu-icons/accounts-icon-white.svg")
+        &.users
+          background-image: url("images/menu-icons/users-icon-white.svg")
+        &.events
+          background-image: url("images/menu-icons/events_icon-gray.svg")
+        &.categories
+          background-image: url("images/menu-icons/categories_icon-white.svg")
+        &.export
+          background-image: url("images/menu-icons/export_icon-white.svg")
+        &.billing
+          background-image: url("images/menu-icons/billing_icon-white.svg")
+    & + ul
+      display: none
+      padding: 3px 0
+      background: $sidebar-submenu-bg
+      a
+        background: none
+        line-height: 130%
+        padding: 5px 0 5px 68px
+        color: $sidebar-text__hover

@@ -1,0 +1,28 @@
+<div class="main-header">
+  <div class="header-container">
+    <div class="header__drop" data-uib-dropdown>
+      <a class="header__drop-btn" data-uib-dropdown-toggle></a>
+      <ul data-uib-dropdown-menu aria-labelledby="simple-dropdown">
+        <li>
+          <a class="superadmin" ng-if="mainHeader.user.profile.first_name">
+            {{mainHeader.user.profile.first_name}} {{mainHeader.user.profile.last_name}}
+          </a>
+          <a class="superadmin" ng-if="!mainHeader.user.profile.first_name">
+            {{mainHeader.user.profile.email}}
+          </a>
+        </li>
+        <li class="menu-icon">
+          <a data-ui-sref="root.profile">
+            <div class="profile-logo"></div>
+            <span>Profile</span>
+          </a></li>
+        <li class="menu-icon">
+          <a data-ng-click="mainHeader.logout()">
+            <div class="sign-out"></div>
+            <span>Sign out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

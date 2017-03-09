@@ -1,0 +1,366 @@
+.login-form
+  background: $login-form
+  padding-bottom: 15px
+  padding-top: 15px
+  margin-bottom: 18px
+  border-radius: 2px
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1)
+  form
+    max-width: 300px
+    margin: auto
+    .form-group
+      margin-bottom: 16px
+      input
+        background: $login-input
+        box-shadow: none
+        font-weight: 300
+        font-size: 1.188em
+        border: 1px solid #fff
+        border-radius: 2px
+        padding: 0 18px
+        height: 50px
+        font-style: italic
+        &:focus
+          border: 1px solid $sf-border__hover
+
+.form-block
+  border-top: 1px solid $blue-color
+  margin-top: 30px
+  padding: 15px 0 10px
+  .flex
+    justify-content: space-between
+    &-start
+      justify-content: flex-start
+  &.no-border
+    border: none
+    padding: 0
+  .border-top
+    border-top: 1px solid $blue-color
+    padding: 15px 0 10px
+
+.simple-form
+  .radio-block
+    margin: 10px 0 8px
+    ul
+      li:not(:last-child)
+        margin-bottom: 20px
+  .submit
+    margin-top: 45px
+    padding: 12px 22px 18px
+  .form-group
+    padding-bottom: 2px
+    & + .flex
+      justify-content: space-between
+    label
+      display: block
+      width: 100%
+      margin-bottom: 3px
+    input
+      background: $sf-login-input
+      box-shadow: none
+      font-weight: 300
+      font-size: 1.125em
+      border: 1px solid $sf-border
+      padding: 0 10px
+      height: 36px
+      margin-bottom: 5px
+      display: block
+      &:focus
+        border: 1px solid $sf-border__hover
+    textarea
+      background: $sf-login-input
+      box-shadow: none
+      font-weight: 300
+      font-size: 1.125em
+      border: 1px solid $sf-border
+      padding: 0 10px
+      margin-bottom: 5px
+      display: block
+      resize: none
+      width: 100%
+      height: 150px
+      &:focus
+        outline: none
+        border: 1px solid $sf-border__hover
+    select
+      background: $sf-login-input
+      box-shadow: none
+      font-weight: 300
+      font-size: 1.125em
+      border: 1px solid $sf-border
+      padding: 0 10px
+      height: 36px
+      width: 100%
+      margin-bottom: 5px
+      display: block
+      &:focus
+        border: 1px solid $sf-border__hover
+      &:disabled
+        background: $login-form
+
+.simple-form,
+.login-form
+  input[type="checkbox"]
+    display: none
+    & + label[for="recurring"]:before
+      border: 1px solid grey
+    & + .weekdays:before
+      border: 1px solid grey
+    & + label
+      line-height: 100%
+      font-weight: 300
+      font-size: 1.063em
+      cursor: pointer
+      position: relative
+      user-select: none
+      margin-bottom: 22px
+      max-width: 160px
+      &:after,
+      &:before
+        content: ''
+        display: inline-block
+      &:before
+        width: 15px
+        height: 15px
+        margin-right: 13px
+        position: relative
+        top: 2px
+        background: #fff
+        border-color: #dcddde
+    &:checked
+      & + label:after
+        position: absolute
+        width: 11px
+        height: 11px
+        margin: 2px
+        background: #afb1b2
+        left: 0
+        top: 2px
+    & + label[for="recurring"]:after
+      top: 10px
+
+.simple-form,
+.login-form
+  .radio-block
+    input[type="radio"]
+      display: none
+      & + label
+        display: inline-block
+        cursor: pointer
+        position: relative
+        width: auto
+        padding-left: 26px
+        margin-right: 30px
+        &:after
+          transition: 0.5s
+          content: ''
+          width: 16px
+          height: 16px
+          border-radius: 50%
+          border: 1px solid #c8c9cb
+          position: absolute
+          bottom: 0
+          left: 0
+          background: #fff
+      &:checked + label
+        &:before
+          transition: 0.5s
+          content: ''
+          width: 16px
+          height: 16px
+          border-radius: 50%
+          position: absolute
+          bottom: 0
+          left: 1px
+          margin-left: 0px
+          z-index: 2
+          background: #595e6f
+
+.simple-form
+  .inline-label
+    .location
+      font-size: 1em
+    justify-content: space-between
+    align-content: center
+    margin-bottom: 28px
+    & > label
+      flex: 2 0 100px
+      margin-bottom: 0
+      padding-top: 8px
+    & > div
+      flex: 20 0 0
+      margin-bottom: 0
+    & > span
+      flex: 20px 0 0
+      padding-top: 8px
+      input
+        margin-bottom: 0
+    &.wide
+      & > label
+        flex: 2 0 200px
+        margin-bottom: 0
+        padding-top: 8px
+  .subscription-type
+    margin-top: 13px
+    justify-content: space-between
+    .subscription-type__item
+      width: 30%
+      input[type="radio"]
+        & + label
+          cursor: pointer
+          color: #000
+          text-align: center
+          border-radius: 2px
+          width: 100%
+          background-color: $subscription-type
+          padding: 16px 0
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1)
+          position: relative
+          &:before
+            transition: 0.5s
+          &:after
+            transition: 0.5s
+            content: ''
+            width: 16px
+            height: 16px
+            border-radius: 50%
+            border: 1px solid #c8c9cb
+            position: absolute
+            bottom: -27px
+            left: 50%
+            margin-left: -9px
+            background: #fff
+          &:hover
+            background-color: $subscription-type__hover
+            color: #fff
+            &:before
+              transition: 0.5s
+              content: ''
+              width: 16px
+              height: 16px
+              border-radius: 50%
+              position: absolute
+              bottom: -26px
+              left: calc(50% - 2px)
+              margin-left: -7px
+              z-index: 2
+              background: #595e6f
+          span
+            display: block
+            font-size: 1.250em
+            margin-bottom: 5px
+            font-weight: 400
+
+      input:checked + label
+        background-color: $subscription-type__hover
+        color: #fff
+        &:before
+          transition: 0.5s
+          content: ''
+          width: 16px
+          height: 16px
+          border-radius: 50%
+          position: absolute
+          bottom: -26px
+          left: calc(50% - 2px)
+          margin-left: -7px
+          z-index: 2
+          background: #595e6f
+
+.expiration-code
+  .flex-start
+    .col
+      width: 50px
+      padding-right: 5px
+      input
+        text-align: center
+      & + .col
+        padding-right: 0
+        padding-left: 5px
+
+.captcha
+  margin-top: 26px
+
+.optional
+  position: relative
+  &:before
+    content: "+"
+    font-size: 2em
+    display: inline-block
+    position: absolute
+    left: -10px
+    top: 6px
+    transform: rotate(45deg)
+  &:after
+    content: "(optional)"
+    display: inline-block
+    position: absolute
+    left: 103%
+    top: 8px
+
+.switch
+  .cmn-toggle
+    position: absolute
+    margin-left: -9999px
+    visibility: hidden
+    & + label
+      display: block
+      position: relative
+      cursor: pointer
+      outline: none
+      user-select: none
+  input.cmn-toggle-round
+    & + label
+      padding: 2px
+      width: 60px
+      height: 30px
+      background-color: #dddddd
+      border-radius: 30px
+    & + label:before,
+    & + label:after
+      display: block
+      position: absolute
+      top: 1px
+      left: 1px
+      bottom: 1px
+      content: ""
+    & + label:before
+      width: 58px
+      height: 28px
+      margin-right: 0
+      position: absolute
+      top: 1px
+      left: 1px
+      background-color: #f1f1f1
+      border-radius: 30px
+      transition: background 0.4s
+    & + label:after
+      width: 28px
+      background-color: #fff
+      border-radius: 100%
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+      transition: margin 0.4s
+    &:checked
+      & + label:before
+        background-color: #595e6f
+      & + label:after
+        width: 28px
+        height: 28px
+        left: 1px
+        margin: 0 0 0 30px
+        background-color: #fff
+        top: 1px
+
+.simple-form input[type="radio"],
+.simple-form input[type="checkbox"]
+  display: none
+
+
+@media screen and (max-width: 1230px)
+  .optional-wrap
+    justify-content: flex-start
+
+@media screen and (max-width: 1024px)
+  .optional-wrap
+    .col70
+      max-width: 60%

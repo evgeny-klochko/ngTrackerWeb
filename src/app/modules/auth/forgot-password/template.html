@@ -1,0 +1,38 @@
+<div class="page-login full-w-block">
+  <div class="login-container">
+    <div class="login-form" data-ng-if="forgot.state.sent">
+      <h1 class="page-title center">Password restoring</h1>
+      <form>
+        <div class="form-group">
+          An Email was sent to your email address. Please follow the link from this email.
+        </div>
+      </form>
+    </div>
+    <div class="login-form" data-ng-if="!forgot.state.sent">
+      <form name="ForgotForm" novalidate="true" data-ng-submit="forgot.submit(ForgotForm)">
+        <h1 class="page-title center">Password restoring</h1>
+        <div class="form-group">
+          Enter your email address and we will send you link to reset password
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="username" name="username"
+            data-ng-model="forgot.credentials.username"
+            data-ng-required="true"
+            data-username
+          >
+          <p class="error" data-ng-messages="ForgotForm.$submitted && ForgotForm.username.$error">
+            <span ng-message="username">Invalid email format</span>
+            <span ng-message="required">Please provide email</span>
+          </p>
+        </div>
+        <div class="form-group center">
+          <button class="button button_blue button_light">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="register-block">
+      <div><a ui-sref="blank.register">Click here to register an account.</a></div>
+    </div>
+  </div>
+</div>

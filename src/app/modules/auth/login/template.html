@@ -1,0 +1,27 @@
+<div class="page-login full-w-block">
+  <div class="login-container">
+    <div class="login-form">
+      <form name="LoginForm" novalidate="true" data-ng-submit="login.submit(LoginForm)">
+        <h1 class="page-title center">Sign in</h1>
+        <div class="form-group">
+          <input type="text" placeholder="Username" data-ng-model="login.credentials.username" data-ng-required="true">
+          <server-validation errors="login.errors.username"></server-validation>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" data-ng-model="login.credentials.plain_password" data-ng-required="true">
+          <server-validation errors="login.errors.password"></server-validation>
+          <p class="error" ng-bind="login.errors.message"></p>
+        </div>
+        <div class="form-group center">
+          <button class="button button_blue button_light">Enter</button>
+        </div>
+      </form>
+    </div>
+    <div class="forgot-block">
+      <a ui-sref="blank.forgot-password">Forgot password?</a>
+    </div>
+    <div class="register-block">
+      <div><a ui-sref="blank.register">Click here to register an account.</a></div>
+    </div>
+  </div>
+</div>
