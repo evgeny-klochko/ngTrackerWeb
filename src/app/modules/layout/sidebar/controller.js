@@ -8,11 +8,12 @@
   /* @ngInject */
   function SidebarCtrl($state, User, APP_CONFIG, SIDEBAR_CONFIG) {
     var vm = this;
+    var isAdmin = true;
 
     angular.extend(vm, {
       $state: $state,
       user: User.user(),
-      routes: User.isAdmin() ? SIDEBAR_CONFIG.ADMIN_ROUTES : SIDEBAR_CONFIG.SUPER_ADMIN_ROUTES,
+      routes: isAdmin ? SIDEBAR_CONFIG.ADMIN_ROUTES : SIDEBAR_CONFIG.SUPER_ADMIN_ROUTES,
       contacts: {
         email: APP_CONFIG.SUPPORT_EMAIL,
         phone: APP_CONFIG.SUPPORT_PHONE

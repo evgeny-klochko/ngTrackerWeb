@@ -1,0 +1,21 @@
+<div class="main-content">
+  <div class="page-container">
+    <div class="page-head">
+      <span class="errors"></span>
+      <h1 class="page-title">Errors</h1>
+    </div>
+    <div class="main-block">
+		  <tw-table
+        cols="errors.table.cols"
+        limit="errors.table.limit"
+        buttons="errors.table.buttons"
+        service="errors.table.service"
+        page="errors.table.page"
+        on-delete-confirm-title="errors.table.onDeleteConfirmTitle"
+        on-edit="errors.table.onEditClick(entity)"
+        on-delete="errors.table.onDeleteClick(entity)"
+        on-change-page="errors.table.onChangePage(page)"
+		  ></tw-table>
+    </div>
+  </div>
+</div>

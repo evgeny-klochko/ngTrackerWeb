@@ -8,6 +8,7 @@
       'angularModalService',
       'LocalStorageModule',
       'ngMessages',
+      'ngTable',
       'toastr',
       'ui.bootstrap',
       'vcRecaptcha',
@@ -15,10 +16,10 @@
       'TSC.services',
       'TSC.layout',
       'TSC.configs',
-      'TSC.common',
+      'TW.common',
       'TSC.landing',
       'TSC.auth',
-      'TSC.errors',
+      'TSC.dashboard',
       'TSC.profile'
     ]);
 }());

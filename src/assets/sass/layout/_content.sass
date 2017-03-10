@@ -1,20 +1,55 @@
 .page-title
-  font-size: 2.250em
-  line-height: 130%
+  width: 100%
+  font-size: 3em
+  text-transform: uppercase
   color: $page-title
-  font-weight: 300
-  margin-bottom: 2px
-  padding-bottom: 0.7em
+  font-weight: 500
+  padding-top: 30px
+  padding-left: 10px
+  padding-bottom: 30px
 
-.page-container
-  max-width: 1100px
-  padding: 110px 20px 100px
-  margin: auto
+.page-head
+  display: flex
+  height: 80px
+  flex-direction: row
+  border-bottom: 2px solid $main-header-bg
+  justify-content: flex-end
+  padding: 0 15px
+  span
+    margin: 12px 0
+    display: inline-block
+    width: 47px
+    height: 45px
+    background-repeat: no-repeat
+    background-size: cover
+    margin-right: 5px
+    margin-top: 15px
+    &.common
+      background-image: url("images/menu-icons/speed-icon.svg")
+    &.errors
+      background-image: url("images/menu-icons/error-icon.svg")
+    &.pages
+      background-image: url("images/menu-icons/pages-icon.svg")
+    &.browsers
+      background-image: url("images/menu-icons/browser-icon.svg")
+
+
+  &>div.stat-item
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding: 20px
+    &>.title
+      font-size: 1em
+      text-transform: uppercase
+    &>.value
+      font-size: 1.5em
+
 
 .white-bg-container
   max-width: 1164px
   min-height: 70vh
-  padding: 70px 15px 25px
+  padding: 70px 0 25px
   margin: 130px auto
   background-color: #fff
 
@@ -27,18 +62,23 @@
   font-weight: 300
   p
     margin-bottom: 18px
-
+.row
+  padding: 15px
+  display: flex
+  flex-direction: row
+  .col-block
+    .col-block_head
+      padding: 20px 0
+      text-align: center
+      font-size: 2em
+      text-transform: uppercase
+      border-bottom: 2px solid $main-header-bg
 .col
   padding-right: 15px
+
   & + .col
     padding-right: 0
     padding-left: 15px
-
-.header-container
-  max-width: 930px
-  padding: 0 15px
-  margin: auto
-
 
 .col20
   flex: 3 0 20%
@@ -54,7 +94,6 @@
 
 .col50
   width: 50%
-  max-width: 510px
 
 .col60
   flex: 6 0 60%
@@ -83,10 +122,13 @@
   min-height: 100vh
   overflow-x: hidden
   background: #fff
+  .main-block
+    padding: 15px
+
   .header-page-container,
   .page-container
-    max-width: 930px
-    padding: 130px 15px 50px
+
+    padding: 60px 0 50px
     margin: auto
     .page-container
       padding: 0

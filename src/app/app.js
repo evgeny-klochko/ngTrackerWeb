@@ -37,7 +37,7 @@
     cfpLoadingBarProvider.includeSpinner = false;
     cfpLoadingBarProvider.latencyThreshold = 100;
 
-    localStorageServiceProvider.setPrefix('TSC');
+    localStorageServiceProvider.setPrefix('TRACKER');
 
     angular.extend(toastrConfig, {
       positionClass: 'toast-bottom-right'

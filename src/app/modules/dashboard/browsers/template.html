@@ -1,0 +1,21 @@
+<div class="main-content">
+  <div class="page-container">
+    <div class="page-head">
+      <span class="browsers"></span>
+      <h1 class="page-title">Browsers</h1>
+    </div>
+    <div class="main-block">
+		  <tw-table
+        	cols="browsers.table.cols"
+        	limit="browsers.table.limit"
+        	buttons="browsers.table.buttons"
+        	service="browsers.table.service"
+        	page="browsers.table.page"
+        	on-delete-confirm-title="browsers.table.onDeleteConfirmTitle"
+        	on-edit="browsers.table.onEditClick(entity)"
+        	on-delete="browsers.table.onDeleteClick(entity)"
+        	on-change-page="browsers.table.onChangePage(page)"
+		  ></tw-table>
+    </div>
+  </div>
+</div>

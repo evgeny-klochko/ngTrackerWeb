@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('TSC.common')
+    .module('TW.common')
     .component('confirm', {
       templateUrl: 'common/modals/confirm/template.html',
       controller: 'ConfirmComponentCtrl',

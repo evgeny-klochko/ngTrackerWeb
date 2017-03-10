@@ -1,3 +1,35 @@
-<div class="page-container content-wrap full-w-block">
-  <h1 class="page-title">Sign up</h1>
+<div class="page-login full-w-block">
+  <div class="login-container">
+    <div class="login-form">
+      <form name="RegisterForm" novalidate="true" data-ng-submit="register.submit(RegisterForm)">
+        <h1 class="page-title center">Sign up</h1>
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Email" data-ng-model="register.credentials.username" username data-ng-required="">
+          <server-validation errors="register.errors.username"></server-validation>
+          <p class="error" data-ng-messages="RegisterForm.username.$error">
+            <span ng-if="RegisterForm.$submitted" ng-message="username">Invalid email address</span>
+            <span ng-if="RegisterForm.$submitted" data-ng-message="required">Please repeat password</span>
+          </p>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" data-ng-model="register.credentials.plain_password" data-ng-required="">
+          <server-validation errors="register.errors.password"></server-validation>
+          <p class="error" ng-bind="register.errors.message"></p>
+        </div>
+        <div class="form-group">
+          <input type="password" name="passwordConfirmation" placeholder="Confirm password" data-ng-model="register.credentials.confirm_password" data-compare-password="register.credentials.plain_password" data-ng-required="">
+          <server-validation errors="register.errors.password"></server-validation>
+          <p class="error" ng-bind="register.errors.message"></p>
+          <p class="error" data-ng-messages="RegisterForm.passwordConfirmation.$error">
+            <span ng-message="passwordConfirmation">Didn't matches to password</span>
+            <span ng-if="RegisterForm.$submitted" data-ng-message="required">Please repeat password</span>
+          </p>
+        </div>
+        <div class="form-group center">
+          <button class="button button_blue button_light">Enter</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
 </div>

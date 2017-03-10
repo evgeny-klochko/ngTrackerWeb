@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('TSC.common')
+    .module('TW.common')
     .directive('comparePassword', ComparePassword);
 
   /* @ngInject */

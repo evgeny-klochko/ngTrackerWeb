@@ -31,14 +31,17 @@
         & + ul
           a
             text-transform: none
-            font-style: italic
             &.active,
             &:hover
               background: none
   &__logo
-    padding-top: 65px
-    padding-bottom: 30px
+    padding-top: 20px
+
     text-align: center
+
+    &>img
+      width: 160px
+      margin-top: 10px
   &__footer
     flex: 1 0 auto
     background: $sidebar-footer-bg
@@ -56,7 +59,7 @@
   a
     cursor: pointer
     display: block
-    padding: 10px 0 10px 30px
+    padding: 5px 0 0 10px
     color: $sidebar-text
     font-size: 0.750em
     span
@@ -114,5 +117,5 @@
       a
         background: none
         line-height: 130%
-        padding: 5px 0 5px 68px
+        padding: 5px 0 5px 58px
         color: $sidebar-text__hover

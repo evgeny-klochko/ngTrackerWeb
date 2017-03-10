@@ -32,6 +32,7 @@ const paths = {
       dirs.modules + '/angular-toastr/dist/angular-toastr.tpls.js',
       dirs.modules + '/angular-local-storage/dist/angular-local-storage.js',
       dirs.modules + '/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
+      dirs.modules + '/ng-table/bundles/ng-table.js',
       dirs.modules + '/angular-recaptcha/release/angular-recaptcha.js'
     ],
     vendors: [

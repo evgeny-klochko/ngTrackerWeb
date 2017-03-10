@@ -2,5 +2,5 @@
   'use strict';
 
   angular
-    .module('TSC.common', []);
+    .module('TW.common', []);
 }());

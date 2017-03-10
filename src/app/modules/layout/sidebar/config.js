@@ -27,21 +27,32 @@
 
       ADMIN_ROUTES: [
         {
-          title: 'Errors',
-          root: 'root.errors',
-          className: 'errors',
+          title: 'Dashboard',
+          root: 'root.dashboard',
+          className: 'dashboard',
           subroutes: [
-            { title: 'All errors', state: 'root.errors.list' },
-            { title: 'Suggestions', state: 'root.errors.suggestions' }
+            { title: 'Common', state: 'root.dashboard.common' },
+            { title: 'Errors', state: 'root.dashboard.errors' },
+            { title: 'Pages', state: 'root.dashboard.pages' },
+            { title: 'Browsers', state: 'root.dashboard.browsers' }
           ]
         },
         {
           title: 'Statistics',
-          root: 'root.stat',
-          className: 'stat',
+          root: 'root.statistics',
+          className: 'statistics',
           subroutes: [
-            { title: 'Common', state: 'root.stat.common' },
-            { title: 'Analyze', state: 'root.stat.analyze' }
+            { title: 'Daily', state: 'root.statistics.common' },
+            { title: 'Trends', state: 'root.statistics.trends' }
+          ]
+        },
+        {
+          title: 'Settings',
+          root: 'root.settings',
+          className: 'settings',
+          subroutes: [
+            { title: 'Telemetry', state: 'root.settings.telemetry' },
+            { title: 'Reports', state: 'root.settings.reports' }
           ]
         }
       ]

@@ -1,0 +1,21 @@
+<div class="main-content">
+  <div class="page-container">
+    <div class="page-head">
+      <span class="pages"></span>
+      <h1 class="page-title">Pages</h1>
+    </div>
+    <div class="main-block">
+		  <tw-table
+        	cols="pages.table.cols"
+        	limit="pages.table.limit"
+        	buttons="pages.table.buttons"
+        	service="pages.table.service"
+        	page="pages.table.page"
+        	on-delete-confirm-title="pages.table.onDeleteConfirmTitle"
+        	on-edit="pages.table.onEditClick(entity)"
+        	on-delete="pages.table.onDeleteClick(entity)"
+        	on-change-page="pages.table.onChangePage(page)"
+		  ></tw-table>
+    </div>
+  </div>
+</div>
