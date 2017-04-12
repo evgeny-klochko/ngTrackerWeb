@@ -13,15 +13,15 @@
         },
         cols: [
           {
-            field: 'time',
-            title: 'Timestamp',
-            filterable: true
-          },
-          {
             field: 'error',
             title: 'Error',
             sortable: 'error',
             sortDirection: 'asc',
+            filterable: true
+          },
+          {
+            field: 'error_class',
+            title: 'Error class',
             filterable: true
           },
           {
@@ -32,9 +32,9 @@
             filterable: true
           },
           {
-            field: 'browser',
-            title: 'Browser',
-            sortable: 'browser',
+            field: 'last_seen',
+            title: 'Last seen',
+            sortable: 'last_seen',
             sortDirection: 'asc',
             filterable: true
           },

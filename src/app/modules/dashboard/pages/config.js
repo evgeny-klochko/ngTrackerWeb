@@ -13,14 +13,21 @@
         },
         cols: [
           {
-            field: 'errors',
-            title: 'Errors',
+            field: 'url',
+            title: 'URL',
             filterable: true
           },
           {
-            field: 'page',
-            title: 'Page',
-            sortable: 'page',
+            field: 'number',
+            title: 'Errors number',
+            sortable: 'number',
+            sortDirection: 'asc',
+            filterable: true
+          },
+          {
+            field: 'first_seen',
+            title: 'First seen',
+            sortable: 'first_seen',
             sortDirection: 'asc',
             filterable: true
           },

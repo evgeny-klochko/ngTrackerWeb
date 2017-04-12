@@ -13,14 +13,16 @@
         },
         cols: [
           {
-            field: 'errors',
-            title: 'Errors',
-            filterable: true
-          },
-          {
             field: 'browser',
             title: 'Browser',
             sortable: 'browser',
+            sortDirection: 'asc',
+            filterable: true
+          },
+          {
+            field: 'number',
+            title: 'Errors number',
+            sortable: 'number',
             sortDirection: 'asc',
             filterable: true
           },
