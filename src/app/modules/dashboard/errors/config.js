@@ -6,7 +6,7 @@
     .constant('ACCOUNTS_LIST', {
       table: {
         service: null,
-        limit: 16,
+        limit: 10,
         onDeleteConfirmTitle: 'Are you sure you want to delete this account?',
         buttons: {
           buttonFilter: true
@@ -25,9 +25,9 @@
             filterable: true
           },
           {
-            field: 'first_seen',
-            title: 'First seen',
-            sortable: 'first_seen',
+            field: 'last_seen',
+            title: 'Last seen',
+            sortable: 'last_seen',
             sortDirection: 'asc',
             filterable: true
           },
