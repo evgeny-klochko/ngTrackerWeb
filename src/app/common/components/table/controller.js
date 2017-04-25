@@ -83,7 +83,7 @@
         page: $ctrl.page || 1,
         count: $ctrl.limit
       }, {
-        counts: [16, 32, 64, 128],
+        counts: [10, 20, 50],
         paginationMaxBlocks: 3,
         paginationMinBlocks: 2,
         getData: function (ngTable) {
