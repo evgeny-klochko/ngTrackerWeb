@@ -6,7 +6,7 @@
     .constant('BROWSERS_LIST', {
       table: {
         service: null,
-        limit: 16,
+        limit: 10,
         onDeleteConfirmTitle: 'Are you sure you want to delete this account?',
         buttons: {
           buttonFilter: true
@@ -20,23 +20,30 @@
             filterable: true
           },
           {
-            field: 'number',
-            title: 'Errors number',
-            sortable: 'number',
+            field: 'views',
+            title: 'Views',
+            sortable: 'views',
             sortDirection: 'asc',
             filterable: true
           },
           {
-            field: 'last_seen',
-            title: 'Last seen',
-            sortable: 'last_seen',
+            field: 'errors',
+            title: 'Errors',
+            sortable: 'errors',
             sortDirection: 'asc',
             filterable: true
           },
           {
-            field: 'trend',
+            field: 'relative',
+            title: 'Relative number',
+            sortable: 'relative',
+            sortDirection: 'asc',
+            filterable: true
+          },
+          {
+            field: 'last_2_week',
             title: 'Trend',
-            sortable: 'trend',
+            sortable: 'last_2_week',
             sortDirection: 'asc',
             filterable: true
           },

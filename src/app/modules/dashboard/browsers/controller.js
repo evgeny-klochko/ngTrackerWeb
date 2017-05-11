@@ -6,12 +6,12 @@
     .controller('BrowsersCtrl', BrowsersCtrl);
 
   /* @ngInject */
-  function BrowsersCtrl($state, $stateParams, BROWSERS_LIST) {
+  function BrowsersCtrl($state, $stateParams, BROWSERS_LIST, Auth) {
     var vm = this;
 
     angular.extend(vm, {
       table: angular.extend(BROWSERS_LIST.table, {
-        service: null,
+        service: Auth.getBrowsers,
         page: $stateParams.page
       })
     });

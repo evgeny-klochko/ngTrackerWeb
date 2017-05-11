@@ -25,16 +25,16 @@
             filterable: true
           },
           {
-            field: 'last_seen',
-            title: 'Last seen',
-            sortable: 'last_seen',
+            field: 'time',
+            title: 'Time',
+            sortable: 'time',
             sortDirection: 'asc',
             filterable: true
           },
           {
-            field: 'last_seen',
-            title: 'Last seen',
-            sortable: 'last_seen',
+            field: 'browser',
+            title: 'Browser',
+            sortable: 'browser',
             sortDirection: 'asc',
             filterable: true
           },

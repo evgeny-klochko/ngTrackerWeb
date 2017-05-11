@@ -1,5 +1,23 @@
 <div class="main-content">
-  <div class="page-container" data-ng-if="profile.user.isAdmin">
-    <h2 class="page-title">My profile</h2>
+  <div class="page-container">
+    <h2 class="page-title">Installation</h2>
+    <div class="">
+      <div class="installation-header">
+        <p class="first"><span >Welcome.</span>  Let's fix some errors.</p>
+        <p>
+          Let's install the TrackerWeb error tracker in your application. It's super easy to get started. Don't worry, there's lots of options for you to <a href="">customize this later</a>.
+        </p>
+      </div>
+      <div class="installation-content">
+          <h4>Install the TrackerWeb Library</h4>
+          <p>The TrackerWeb library lives in your web application. Paste this snippet before your other scripts in the <head> of your page.</p>
+            <xmp>
+                <!-- BEGIN TrackerWeb -->
+                <script type="text/javascript">window.TrackerWeb = { token: 'f92ca77cef5b4f16b81ded8528191c40' };</script>
+                <script type="text/javascript" src="trackerWeb-agent.js"></script>
+                <!-- END TrackerWeb -->
+            </xmp>
+      </div>
+    </div>
   </div>
 </div>

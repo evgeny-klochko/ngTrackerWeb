@@ -39,7 +39,9 @@ const paths = {
       dirs.modules + '/jquery/dist/jquery.js',
       dirs.modules + '/moment/moment.js',
       dirs.modules + '/lodash/lodash.js',
-      dirs.modules + '/bootstrap/dist/js/bootstrap.js'
+      dirs.modules + '/bootstrap/dist/js/bootstrap.js',
+      dirs.modules + '/chart.js/dist/Chart.js',
+      dirs.modules + '/angular-chart.js/dist/angular-chart.js'
     ]
   },
   sass: dirs.src + '/assets/sass/style.sass',

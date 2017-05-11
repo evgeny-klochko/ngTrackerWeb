@@ -12,6 +12,7 @@
       'toastr',
       'ui.bootstrap',
       'vcRecaptcha',
+      'chart.js',
 
       'TSC.services',
       'TSC.layout',
@@ -20,6 +21,7 @@
       'TSC.landing',
       'TSC.auth',
       'TSC.dashboard',
-      'TSC.profile'
+      'TSC.profile',
+      'TSC.installation'
     ]);
 }());

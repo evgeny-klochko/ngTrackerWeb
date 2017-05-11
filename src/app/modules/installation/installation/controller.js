@@ -2,11 +2,11 @@
   'use strict';
 
   angular
-    .module('TSC.profile')
-    .controller('ProfileCtrl', ProfileCtrl);
+    .module('TSC.installation')
+    .controller('InstallationCtrl', InstallationCtrl);
 
   /* @ngInject */
-  function ProfileCtrl() {
+  function InstallationCtrl() {
     var vm = this;
 
     angular.extend(vm, {

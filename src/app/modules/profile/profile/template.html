@@ -1,5 +1,91 @@
 <div class="main-content">
   <div class="page-container">
     <h2 class="page-title">My profile</h2>
+    <div class="settings">
+      <form name="Settings">
+        <div class="settings-item">
+          <h4>Alerts</h4>
+          <div class="form-group">
+            <label for="email">
+              Email<br>
+              <input type="text" value="support@email.com" name="email">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="interval">
+              Report interval:<br>
+              <select>
+                <option>Every day</option>
+                <option>Every 2 day</option>
+                <option>Every week</option>
+                <option>Every 2 week</option>
+                <option>Every month</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="settings-item">
+          <h4>Error classes</h4>
+          <h5>Mark error classes you want to track:</h5>
+          <div class="form-group">
+            <label for="class1">
+              Uncaught TypeError
+              <input checked="checked" type="checkbox" name="class1">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="class1">
+              Uncaught ReferenceError
+              <input checked="checked" type="checkbox" name="class1">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="class1">
+              Uncaught SyntaxError
+              <input checked="checked" type="checkbox" name="class1">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="class1">
+              Uncaught RangeError
+              <input checked="checked" type="checkbox" name="class1">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="class1">
+              Uncaught URIError
+              <input checked="checked" type="checkbox" name="class1">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="class1">
+              Cross-Origin Request Blocked
+              <input checked="checked" type="checkbox" name="class1">
+            </label>
+          </div>
+            <div class="form-group">
+            <label for="class1">
+              InvalidStateError
+              <input checked="checked" type="checkbox" name="class1">
+            </label>
+          </div>
+        </div>
+        <div class="settings-item">
+          <h4>Pages exception</h4>
+          <ul>
+            <li>There is no any exceptions.</li>
+          </ul>
+          <button class="button button-add"></button>
+        </div>
+        <div class="settings-item">
+          <h4>Browsers exception</h4>
+          <ul>
+            <li>There is no any exceptions.</li>
+          </ul>
+          <button class="button button-add"></button>
+        </div>
+        <button type="submit" class="button button-submit">Save</button>
+      </form>
+    </div>
   </div>
 </div>
