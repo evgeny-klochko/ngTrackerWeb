@@ -38,21 +38,12 @@
           ]
         },
         {
-          title: 'Statistics',
-          root: 'root.statistics',
-          className: 'statistics',
-          subroutes: [
-            { title: 'Daily', state: 'root.statistics.common' },
-            { title: 'Trends', state: 'root.statistics.trends' }
-          ]
-        },
-        {
           title: 'Settings',
           root: 'root.settings',
-          className: 'settings',
+          className: 'settingss',
           subroutes: [
-            { title: 'Telemetry', state: 'root.settings.telemetry' },
-            { title: 'Reports', state: 'root.settings.reports' }
+            { title: 'Personalisation', state: 'root.profile' },
+            { title: 'Installation', state: 'root.installation' }
           ]
         }
       ]

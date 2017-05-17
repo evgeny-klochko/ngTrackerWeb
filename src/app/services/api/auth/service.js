@@ -140,72 +140,72 @@
         {
           browser: 'Chrome v57',
           views: '3044',
-          errors: '12',
+          errors: '142',
           last_2_week: '-5'
         },
         {
           browser: 'Chrome v56',
-          views: '2019',
-          errors: '13',
+          views: '519',
+          errors: '31',
           last_2_week: '-2'
         },
         {
           browser: 'Chrome v55',
-          views: '975',
+          views: '75',
           errors: '5',
           last_2_week: '+1'
         },
         {
           browser: 'Chrome v54',
-          views: '327',
+          views: '27',
           errors: '2',
           last_2_week: '+3'
         },
         {
           browser: 'Safari v5',
-          views: '466',
+          views: '66',
           errors: '6',
           last_2_week: '-1'
         },
         {
           browser: 'Firefox v53',
-          views: '466',
-          errors: '6',
+          views: '253',
+          errors: '56',
           last_2_week: '-1'
         },
         {
           browser: 'Firefox v52',
-          views: '466',
+          views: '13',
           errors: '6',
           last_2_week: '-1'
         },
         {
           browser: 'Firefox v51',
-          views: '466',
+          views: '12',
           errors: '6',
           last_2_week: '-1'
         },
         {
           browser: 'Firefox v50',
-          views: '466',
+          views: '10',
           errors: '6',
           last_2_week: '-1'
         },
         {
           browser: 'IE 11',
-          views: '210',
+          views: '27',
           errors: '4',
           last_2_week: '+2'
         },
         {
           browser: 'IE 10',
-          views: '54',
+          views: '8',
           errors: '7',
           last_2_week: '+2'
         },
         {
           browser: 'IE 9',
-          views: '13',
+          views: '9',
           errors: '4',
           last_2_week: '+1'
         }
@@ -231,25 +231,25 @@
         {
           url: '/',
           views: '3044',
-          errors: '0',
+          errors: '77',
           last_2_week: '0'
         },
         {
           url: '/test_page',
-          views: '2044',
-          errors: '12',
+          views: '1022',
+          errors: '113',
           last_2_week: '+1'
         },
         {
           url: '/test_page2',
-          views: '1234',
+          views: '410',
           errors: '44',
           last_2_week: '+31'
         },
         {
           url: '/test_page3',
-          views: '142',
-          errors: '24',
+          views: '282',
+          errors: '86',
           last_2_week: '-21'
         }
       ];
