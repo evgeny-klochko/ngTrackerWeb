@@ -1,0 +1,53 @@
+onload () {
+  - save history in sessionStorage
+  - send agent_token
+} => Server do => increase account pages visited
+
+onerror () {
+  - save history in ssessionStorage
+  - save lastErrorTime in sessionStorage
+  - send history
+  - send agent_token
+  - send all telemetry
+} => Server do => call errorParser()
+
+onbeforeunload () {
+  send agent_token
+  send timestamp
+  send isErrorLast20Sec()
+} => Server do => 
+
+
+errorParser() {
+  var allUserErrors = getUserErrors();
+  var telemetry = res.body.telemetry;
+  var agent_token = res.body.agent_token;
+  var parsedError = prepareData(telemetry);
+
+
+
+
+  findSameError(agent_token, parsedError)
+    => true: increaseErrorCount(agent_token);
+            isCritical(parserError)
+              => true: account.critical.push(parserError)
+              => false: none
+            hasSolution()
+              => true: account.solutions.push(solution)
+              => false: none
+
+    => false: addToDB(agent_token, parsedError);
+
+  isCritical(parserError) {
+
+   // sensivityCoeff = 0.2;
+
+   if (sameError.throwsNumber > allUserErrors(day) * sensivityCoeff) {
+    return true;
+   }
+
+   if (isErrorLast20Sec) {
+    return true;
+   }
+  }
+}

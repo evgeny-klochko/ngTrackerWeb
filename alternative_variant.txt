@@ -1,0 +1,4 @@
+Important errors:
+  - show error with highest relative number
+  - show browser with highest relative number
+  - show page with highest relative number

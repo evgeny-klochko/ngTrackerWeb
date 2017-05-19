@@ -20,6 +20,16 @@
             filterable: true
           },
           {
+            field: 'error_file',
+            title: 'File',
+            filterable: true
+          },
+          {
+            field: 'error_line',
+            title: 'Error line',
+            filterable: true
+          },
+          {
             field: 'error_class',
             title: 'Error class',
             filterable: true

@@ -69,56 +69,78 @@
         {
           time: '10/04/2017 1:32 PM',
           error: 'z is not defined',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'ReferenceError',
           browser: 'Chrome'
         }, {
           time: '15/04/2017 2:32 PM',
           error: 'undefined is not a constructor',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'TypeError',
           browser: 'Chrome'
         }, {
           time: '16/05/2017 1:39 AM',
           error: 'undefined is not a constructor',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'TypeError',
           browser: 'Safari'
         }, {
           time: '15/04/2017 2:32 PM',
           error: '$ctrl.service is not a function',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'TypeError',
           browser: 'Chrome'
         }, {
           time: '16/05/2017 1:39 AM',
           error: '$ctrl.service is not a function',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'TypeError',
           browser: 'Safari'
         }, {
           time: '15/04/2017 2:32 PM',
           error: 'Unexpected token <',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'SyntaxError',
           browser: 'Chrome'
         }, {
           time: '16/05/2017 1:39 AM',
           error: 'Unexpected token ,',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'SyntaxError',
           browser: 'Safari'
         }, {
           time: '15/04/2017 2:32 PM',
           error: 'undefined is not a constructor',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'TypeError',
           browser: 'Chrome'
         }, {
           time: '16/05/2017 1:39 AM',
           error: 'getError is not a function',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'TypeError',
           browser: 'Safari'
         }, {
           time: '15/04/2017 2:32 PM',
           error: 'obj is not defined',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'ReferenceError',
           browser: 'Chrome'
         }, {
           time: '16/05/2017 1:39 AM',
           error: 'undefined is not a constructor',
+          error_file: 'index.js',
+          error_line: '127',
           error_class: 'TypeError',
           browser: 'Safari'
         }
